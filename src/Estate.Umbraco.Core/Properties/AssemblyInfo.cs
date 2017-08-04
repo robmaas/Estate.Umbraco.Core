@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Estate.Umbraco.Core")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Estate.Umbraco.Core package")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Estate Internet BV")]
 [assembly: AssemblyProduct("Estate.Umbraco.Core")]
