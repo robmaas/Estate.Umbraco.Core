@@ -10,20 +10,12 @@ namespace Estate.Umbraco.Core.Controllers
     {
         public T GetCurrentItem<T>() where T : PublishedContentModel
         {
-            return Activator.CreateInstance(typeof(T), ContextItem) as T;
+            return GetItem<T>(CoreContext.Item);
         }
 
         public T GetItem<T>(IPublishedContent content) where T : PublishedContentModel
         {
             return Activator.CreateInstance(typeof(T), content) as T;
-        }
-
-        public IPublishedContent ContextItem
-        {
-            get
-            {
-                return UmbracoContext.Current.PublishedContentRequest.PublishedContent;
-            }
         }
     }
 }
